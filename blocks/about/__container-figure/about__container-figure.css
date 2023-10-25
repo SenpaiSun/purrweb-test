@@ -1,0 +1,6 @@
+.about__container-figure {
+  max-width: 100px;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+}

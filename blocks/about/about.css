@@ -1,0 +1,7 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+  margin: 0 16px;
+  color: #fff;
+}
