@@ -1,0 +1,5 @@
+.card-zone {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+}

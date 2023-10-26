@@ -1,0 +1,7 @@
+.card-zone__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 78px 8px 0px 16px;
+  gap: 20px;
+}

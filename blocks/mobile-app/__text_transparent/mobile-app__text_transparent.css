@@ -1,0 +1,8 @@
+.mobile-app__text_transparent {
+  color: #181818;
+  box-shadow: 1px #444444;
+  text-shadow: 1px 0 0 #444444,
+    -1px 0 0 #444444,
+    0 1px 0 #444444,
+    0 -1px 0 #444444;
+}

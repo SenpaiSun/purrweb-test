@@ -1,0 +1,11 @@
+.card-zone__subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  background-image: url(/image/about-background-image.png);
+  background-repeat: no-repeat;
+  background-size: 70.5%;
+  background-position: right bottom 1px;
+  padding-bottom: 5px;
+  margin-left: 6px;
+}

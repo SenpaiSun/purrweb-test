@@ -1,0 +1,8 @@
+.statistics {
+  background-color: #954CED;
+  color: #fff;
+  padding: 39px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
