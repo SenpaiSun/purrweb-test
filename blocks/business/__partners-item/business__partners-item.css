@@ -1,0 +1,10 @@
+.business__partners-item {
+  width: max-content;
+}
+
+.business__partners-item:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2px;
+}

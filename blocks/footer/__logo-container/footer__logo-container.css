@@ -1,0 +1,5 @@
+.footer__logo-container {
+    display: flex;
+    flex-direction: row;
+    margin: 25px 16px 44px;
+}

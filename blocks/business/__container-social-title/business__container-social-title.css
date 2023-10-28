@@ -1,0 +1,4 @@
+.business__container-social-title {
+  display: flex;
+  flex-direction: column;
+}

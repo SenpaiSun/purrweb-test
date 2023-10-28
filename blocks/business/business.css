@@ -1,0 +1,7 @@
+.business {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}

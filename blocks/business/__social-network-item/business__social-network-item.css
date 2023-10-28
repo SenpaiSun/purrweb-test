@@ -1,0 +1,9 @@
+.business__social-network-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #954CED;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}

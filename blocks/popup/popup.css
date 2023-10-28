@@ -1,0 +1,9 @@
+.popup {
+  background-color: #fff;
+  position: fixed;
+  margin: 0 20px;
+  border-radius: 16px;
+  display: none;
+  flex-direction: column;
+  z-index: 2;
+}

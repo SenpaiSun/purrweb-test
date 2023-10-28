@@ -1,0 +1,16 @@
+.business__social-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+  list-style: none;
+  gap: 17px;
+}
+
+.business__social-network .business__social-network-item:nth-child(2n) {
+  margin-top: 65px;
+}
+
+.business__social-network .business__social-network-item:nth-child(1) {
+  background-color: #FFF;
+}
