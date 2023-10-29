@@ -8,3 +8,12 @@
   border-radius: 20px;
   overflow: hidden;
 }
+
+@media screen and (min-width: 1000px) {
+  .card-zone__container-card {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    border-radius: 30px;
+  }
+}

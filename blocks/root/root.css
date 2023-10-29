@@ -23,3 +23,7 @@ p {
 button {
   padding: 0;
 }
+
+input {
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}

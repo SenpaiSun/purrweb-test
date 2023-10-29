@@ -1,3 +1,13 @@
 .popup__contacts-phone {
-
+  margin-top: 4px;
+  height: 38px;
+  border-radius: 15px;
+  padding-left: 45px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  border: 1px solid #F1F1F1;
+  background-image: url(/image/usa.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 12px;
 }

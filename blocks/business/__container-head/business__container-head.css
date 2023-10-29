@@ -7,4 +7,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 91.5%;
+}
+
+@media screen and (min-width: 1000px) {
+  .business__container-head {
+    width: 91.5%;
+    margin: 102px 60px;
+  }
 }

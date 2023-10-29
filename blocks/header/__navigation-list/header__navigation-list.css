@@ -4,3 +4,9 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media screen and (min-width: 1000px) {
+  .header__navigation-list {
+    margin-left: 60px;
+  }
+}

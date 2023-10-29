@@ -8,4 +8,13 @@
   gap: 7px;
   align-items: center;
   justify-content: center;
+  background-image: url(/image/menu.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .header__menu-toggle {
+    display: none;
+  }
 }

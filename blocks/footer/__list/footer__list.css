@@ -5,3 +5,24 @@
   margin-left: 16px;
   list-style: none;
 }
+
+@media screen and (min-width: 1350px) {
+  .footer__list {
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 41px;
+  }
+
+  .footer__list .footer__item:nth-child(3){
+    display: none;
+  }
+
+  .footer__list .footer__item:nth-child(4){
+    display: none;
+  }
+
+  .footer__list .footer__item:nth-child(5){
+    display: none;
+  }
+
+}

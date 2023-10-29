@@ -1,0 +1,19 @@
+.header__button {
+    margin-right: 45px;
+    min-width: 182px;
+    min-height: 57px;
+    border-radius: 15px;
+    border: none;
+    color: #FFF;
+    background-color: #954CED;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 600;
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .header__button {
+    display: block;
+  }
+}

@@ -4,3 +4,9 @@
   line-height: 1.1;
   margin-left: 3px;
 }
+
+@media screen and (min-width: 1000px) {
+  .card-zone__title {
+    font-size: 64px;
+  }
+}

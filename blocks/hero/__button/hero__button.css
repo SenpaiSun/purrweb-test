@@ -1,6 +1,7 @@
 .hero__button {
   margin-top: 24px;
   width: 100%;
+  max-width: 343px;
   min-height: 57px;
   border-radius: 15px;
   border: none;
@@ -9,4 +10,11 @@
   font-size: 20px;
   line-height: 1.25;
   font-weight: 600;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero__button {
+    width: max-content;
+    min-width: 182px;
+  }
 }

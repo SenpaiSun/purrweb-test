@@ -4,3 +4,9 @@
   line-height: 1.2;
   margin-top: 20px;
 }
+
+@media screen and (min-width: 1000px) {
+  .business__social-subtitle {
+    width: 537px;
+  }
+}

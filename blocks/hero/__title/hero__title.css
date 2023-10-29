@@ -6,3 +6,11 @@
   line-height: 1.1;
   letter-spacing: 0.1px;
 }
+
+@media screen and (min-width: 1000px) {
+  .hero__title {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.05;
+  }
+}

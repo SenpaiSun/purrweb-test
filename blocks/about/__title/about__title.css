@@ -3,3 +3,9 @@
   font-weight: 700;
   line-height: 1.1;
 }
+
+@media screen and (min-width: 1000px) {
+  .about__title {
+    font-size: 96px;
+  }
+}

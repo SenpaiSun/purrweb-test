@@ -2,3 +2,9 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (min-width: 1000px) {
+  .business__container-social-title {
+    margin-left: 70px;
+  }
+}

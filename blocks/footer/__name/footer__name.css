@@ -5,3 +5,10 @@
   color: #FFFFFF;
   margin: 0 0 0 6px;
 }
+
+@media screen and (min-width: 1350px) {
+  .footer__name {
+    font-size: 37px;
+    margin-top: 4px;
+  }
+}

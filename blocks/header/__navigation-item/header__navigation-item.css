@@ -8,4 +8,6 @@
   background-color: #181818;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin-bottom: -1px;
+  min-height: 40px;
 }
