@@ -5,3 +5,9 @@
   color: #A64CED;
   margin: 20px 16px;
 }
+
+@media screen and (min-width: 1000px) {
+  .popup__success-title {
+    font-size: 36px;
+  }
+}

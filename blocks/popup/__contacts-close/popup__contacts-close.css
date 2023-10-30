@@ -10,3 +10,9 @@
   background-repeat: no-repeat;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1000px) {
+  .popup__contacts-close {
+    top: 25px;
+  }
+}

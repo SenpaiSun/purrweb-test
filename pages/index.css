@@ -136,3 +136,7 @@
 @import url(../blocks/footer/__item-text-active/footer__item-text-active.css);
 @import url(../blocks/footer/__list-active/footer__list-active.css);
 @import url(../blocks/footer/__list/_active/footer__list_active.css);
+@import url(../blocks/popup/__cookie-button-container/popup__cookie-button-container.css);
+@import url(../blocks/popup/__button-disabled/popup__button-disabled.css);
+@import url(../blocks/root/_scroll-disable/root_scroll-disable.css);
+@import url(../blocks/header/__menu/_fixed/header__menu_fixed.css);

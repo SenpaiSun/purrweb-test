@@ -3,9 +3,16 @@
   top: 50%;
   margin: 0;
   max-width: 417px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -38%);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .popup_success {
+    max-width: 417px;
+    transform: translate(-50%, -50%);
+  }
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
     <title>Document</title>
   </head>
   <body class="root">
@@ -15,24 +15,25 @@
             <li class="header__navigation-item"><a href="#" class="header__navigation-item-link">For Customers</a></li>
           </ul>
         </nav>
-        <div class="header__menu">
+        <div class="header__menu header__menu_fixed">
           <div class="header__menu-container">
-            <picture>
-              <source srcset="/image/header-logo-large.svg" media="(min-width: 1000px)" />
-              <img class="header__menu-logo" src="image/header-logo.svg" alt="Website logo" />
-            </picture>
+            <a href="#">
+              <picture>
+                <source srcset="/image/header-logo-large.svg" media="(min-width: 1000px)">
+                <img class="header__menu-logo" src="image/header-logo.svg" alt="Website logo">
+              </picture>
+            </a>
             <h1 class="header__menu-name">budss</h1>
           </div>
-          <button class="header__menu-toggle" aria-label="Open menu">
+            <button class="header__menu-toggle" aria-label="Open menu"></button>
             <button class="header__button">Contact sales</button>
-          </button>
         </div>
       </header>
       <main>
         <section class="hero">
           <div class="hero__container">
             <h2 class="hero__title">
-              Everyone<br />
+              Everyone<br>
               is an Influencer
             </h2>
             <p class="hero__subtitle">Budss is a payments as a service and WOM engine dedicated to acquisition and retention of customers to your business.</p>
@@ -40,12 +41,12 @@
           </div>
           <div class="hero__image-container">
             <picture>
-              <source srcset="/image/hero-vector-large.png" media="(min-width: 1340px)" />
-              <img class="hero__image-vector" src="/image/hero-vector.png" />
+              <source srcset="/image/hero-vector-large.png" media="(min-width: 1340px)">
+              <img class="hero__image-vector" src="/image/hero-vector.png" alt="Figure">
             </picture>
             <picture>
-              <source srcset="/image/hero-large.png" media="(min-width: 1340px)" />
-              <img class="hero__image" src="/image/hero.png" />
+              <source srcset="/image/hero-large.png" media="(min-width: 1340px)">
+              <img class="hero__image" src="/image/hero.png" alt="Photo of a girl">
             </picture>
           </div>
         </section>
@@ -56,33 +57,33 @@
           <div class="about__container-content">
             <div class="about__container-content-description">
               <p class="about__paragraph">Payment as a service, powered seamlessly by our network of shoppers</p>
-              <img class="about__figure" src="/image/about-figure.png" />
+              <img class="about__figure" src="/image/about-figure.png" alt="Figure">
             </div>
             <div class="about__container-items">
               <div class="about__container-item">
                 <div class="about__container-figure">
-                  <img class="about__item-figure" src="/image/about-contactless-figure.svg" />
+                  <img class="about__item-figure" src="/image/about-contactless-figure.svg" alt="Star Shape">
                 </div>
                 <h3 class="about__item-title">Contactless</h3>
                 <p class="about__item-subtitle">Budss uses near field communication (NFC) for making contactless payments.</p>
               </div>
               <div class="about__container-item">
                 <div class="about__container-figure">
-                  <img class="about__item-figure" src="/image/about-buyingPower-figure.svg" />
+                  <img class="about__item-figure" src="/image/about-buyingPower-figure.svg" alt="Arrow Shape">
                 </div>
                 <h3 class="about__item-title">Increased Buying Power</h3>
                 <p class="about__item-subtitle">Returning customers spend up to 3X more.</p>
               </div>
               <div class="about__container-item">
                 <div class="about__container-figure">
-                  <img class="about__item-figure" src="/image/about-Analytics-figure.svg" />
+                  <img class="about__item-figure" src="/image/about-Analytics-figure.svg" alt="Analytics Shape">
                 </div>
                 <h3 class="about__item-title">Analytics & Insights</h3>
                 <p class="about__item-subtitle">Gain a holistic view into your customers’ buying behavior & purchasing patterns.</p>
               </div>
               <div class="about__container-item">
                 <div class="about__container-figure">
-                  <img class="about__item-figure" src="/image/about-Fraud-figure.svg" />
+                  <img class="about__item-figure" src="/image/about-Fraud-figure.svg" alt="Paper Clip Shape">
                 </div>
                 <h3 class="about__item-title">Fraud Protection</h3>
                 <p class="about__item-subtitle">Budss handles all payments with a fraud prevention algorithm to flag high risk purchases & a user set PIN code to keep payment info secure.</p>
@@ -90,7 +91,7 @@
             </div>
           </div>
         </section>
-        <section class="mobile-app">
+        <div class="mobile-app">
           <div class="mobile-app__container">
             <span class="mobile-app__text mobile-app__text_first">How Budss Works</span>
             <span class="mobile-app__text mobile-app__text_transparent">How Budss Works</span>
@@ -117,11 +118,11 @@
             <span class="mobile-app__text mobile-app__text_transparent">How Budss Works</span>
           </div>
           <picture>
-            <source srcset="/image/mobile-img-large.png" media="(min-width: 1000px)" />
-            <img class="mobile-app__image" src="/image/mobile-img.png" />
+            <source srcset="/image/mobile-img-large.png" media="(min-width: 1000px)">
+            <img class="mobile-app__image" src="/image/mobile-img.png" alt="Screenshot of the Budss mobile app">
           </picture>
-        </section>
-        <section class="statistics">
+        </div>
+        <div class="statistics">
           <div class="statistics__container">
             <span class="statistics__percent">15%</span>
             <p class="statistics__info">Increase in Purchase Amount</p>
@@ -134,7 +135,7 @@
             <span class="statistics__percent">10%</span>
             <p class="statistics__info">Growth in New Customers</p>
           </div>
-        </section>
+        </div>
         <section class="card-zone">
           <div class="card-zone__container">
             <h2 class="card-zone__title">Why Budss</h2>
@@ -150,8 +151,8 @@
               </div>
               <div class="card-zone__container-image">
                 <picture>
-                  <source srcset="/image/first-card-image-large.png" media="(min-width: 1000px)" />
-                  <img class="card-zone__image-first" src="/image/first-card-image.png" />
+                  <source srcset="/image/first-card-image-large.png" media="(min-width: 1000px)">
+                  <img class="card-zone__image-first" src="/image/first-card-image.png" alt="Mobile application with figures">
                 </picture>
               </div>
             </div>
@@ -162,16 +163,16 @@
               </div>
               <div class="card-zone__container-image">
                 <picture>
-                  <source srcset="/image/second-card-image-left-large.png" media="(min-width: 1000px)" />
-                  <img class="card-zone__image-second card-zone__image-second_first" src="/image/second-card-image-left.svg" />
+                  <source srcset="/image/second-card-image-left-large.png" media="(min-width: 1000px)">
+                  <img class="card-zone__image-second card-zone__image-second_first" src="/image/second-card-image-left.svg" alt="Shopping Package">
                 </picture>
                 <picture>
-                  <source srcset="/image/second-card-image-middle-large.png" media="(min-width: 1000px)" />
-                  <img class="card-zone__image-second card-zone__image-second_second" src="/image/second-card-image-middle.svg" />
+                  <source srcset="/image/second-card-image-middle-large.png" media="(min-width: 1000px)">
+                  <img class="card-zone__image-second card-zone__image-second_second" src="/image/second-card-image-middle.svg" alt="Shopping Package">
                 </picture>
                 <picture>
-                  <source srcset="/image/second-card-image-right-large.png" media="(min-width: 1000px)" />
-                  <img class="card-zone__image-second card-zone__image-second_third" src="/image/second-card-image-right.svg" />
+                  <source srcset="/image/second-card-image-right-large.png" media="(min-width: 1000px)">
+                  <img class="card-zone__image-second card-zone__image-second_third" src="/image/second-card-image-right.svg" alt="Shopping Package">
                 </picture>
               </div>
             </div>
@@ -182,8 +183,8 @@
               </div>
               <div class="card-zone__container-image">
                 <picture>
-                  <source srcset="/image/third-card-image-large.png" media="(min-width: 1000px)" />
-                  <img class="card-zone__image-third" src="/image/third-card-image.svg" />
+                  <source srcset="/image/third-card-image-large.png" media="(min-width: 1000px)">
+                  <img class="card-zone__image-third" src="/image/third-card-image.svg" alt="A face with a raised finger up">
                 </picture>
               </div>
             </div>
@@ -194,8 +195,8 @@
               </div>
               <div class="card-zone__container-image">
                 <picture>
-                  <source srcset="/image/fourth-card-img-large.png" media="(min-width: 1000px)" />
-                  <img class="card-zone__image-fourth" src="/image/fourth-card-img.svg" />
+                  <source srcset="/image/fourth-card-img-large.png" media="(min-width: 1000px)">
+                  <img class="card-zone__image-fourth" src="/image/fourth-card-img.svg" alt="A painted creature with a phone">
                 </picture>
               </div>
             </div>
@@ -213,48 +214,48 @@
             </div>
             <ul class="business__social-network">
               <li class="business__social-network-item">
-                <a href="#" target="_blank" title="Facebook"><img class="business__social-network-image" src="/image/facebook-original.svg" alt="Facebook logo" /></a>
+                <a href="#" target="_blank" title="Facebook"><img class="business__social-network-image" src="/image/facebook-original.svg" alt="Facebook logo"></a>
               </li>
               <li class="business__social-network-item">
-                <a href="#" target="_blank" title="Twitter"><img class="business__social-network-image" src="/image/twitter-original.svg" alt="Twitter logo" /></a>
+                <a href="#" target="_blank" title="Twitter"><img class="business__social-network-image" src="/image/twitter-original.svg" alt="Twitter logo"></a>
               </li>
               <li class="business__social-network-item">
-                <a href="#" target="_blank" title="Instagram"><img class="business__social-network-image" src="/image/instagram-negative.svg" alt="Instagram logo" /></a>
+                <a href="#" target="_blank" title="Instagram"><img class="business__social-network-image" src="/image/instagram-negative.svg" alt="Instagram logo"></a>
               </li>
               <li class="business__social-network-item">
-                <a href="#" target="_blank" title="TikTok"><img class="business__social-network-image" src="/image/tik-tok-negative.svg" alt="TikTok logo" /></a>
+                <a href="#" target="_blank" title="TikTok"><img class="business__social-network-image" src="/image/tik-tok-negative.svg" alt="TikTok logo"></a>
               </li>
             </ul>
           </div>
           <ul class="business__partners">
             <li class="business__partners-item">
               <picture>
-                <source srcset="/image/square-large.svg" media="(min-width: 1280px)" />
-                <img class="business__partners-image" src="/image/square.svg" alt="Square logo" />
+                <source srcset="/image/square-large.svg" media="(min-width: 1280px)">
+                <img class="business__partners-image" src="/image/square.svg" alt="Square logo">
               </picture>
             </li>
             <li class="business__partners-item">
               <picture>
-                <source srcset="/image/shopify-large.svg" media="(min-width: 1280px)" />
-                <img class="business__partners-image" src="/image/shopify.svg" alt="Shopify logo" />
+                <source srcset="/image/shopify-large.svg" media="(min-width: 1280px)">
+                <img class="business__partners-image" src="/image/shopify.svg" alt="Shopify logo">
               </picture>
             </li>
             <li class="business__partners-item">
               <picture>
-                <source srcset="/image/woo-large.svg" media="(min-width: 1280px)" />
-                <img class="business__partners-image" src="/image/woo.svg" alt="Woo commerce logo" />
+                <source srcset="/image/woo-large.svg" media="(min-width: 1280px)">
+                <img class="business__partners-image" src="/image/woo.svg" alt="Woo commerce logo">
               </picture>
             </li>
             <li class="business__partners-item">
               <picture>
-                <source srcset="/image/square-space-large.svg" media="(min-width: 1280px)" />
-                <img class="business__partners-image" src="/image/square-space.svg" alt="SquareSpace logo" />
+                <source srcset="/image/square-space-large.svg" media="(min-width: 1280px)">
+                <img class="business__partners-image" src="/image/square-space.svg" alt="SquareSpace logo">
               </picture>
             </li>
             <li class="business__partners-item">
               <picture>
-                <source srcset="/image/clover-large.svg" media="(min-width: 1280px)" />
-                <img class="business__partners-image" src="/image/clover.svg" alt="Clover logo" />
+                <source srcset="/image/clover-large.svg" media="(min-width: 1280px)">
+                <img class="business__partners-image" src="/image/clover.svg" alt="Clover logo">
               </picture>
             </li>
           </ul>
@@ -263,11 +264,15 @@
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__logo-container">
-            <picture>
-              <source srcset="/image/header-logo-large.svg" media="(min-width: 1000px)" />
-              <img class="footer__logo" src="/image/header-logo.svg" alt="Website logo" />
-            </picture>
-            <h1 class="footer__name">budss</h1>
+            <a href="#">
+              <picture>
+                <source srcset="/image/header-logo-large.svg" media="(min-width: 1000px)">
+                <img class="footer__logo" src="/image/header-logo.svg" alt="Website logo">
+              </picture>
+            </a>
+            <a href="#">
+              <h4 class="footer__name">budss</h4>
+            </a>
           </div>
           <nav class="footer__nav">
             <ul class="footer__list">
@@ -283,10 +288,10 @@
           </div>
           <ul class="footer__list-app">
             <li>
-              <a href="#" target="_blank" title="AppStore"><img class="footer__item-app" src="/image/appstore.svg" /></a>
+              <a href="#" target="_blank" title="AppStore"><img class="footer__item-app" src="/image/appstore.svg" alt="Link AppStore"></a>
             </li>
             <li>
-              <a href="#" target="_blank" title="GooglePlay"><img class="footer__item-app" src="/image/googleplay.svg" /></a>
+              <a href="#" target="_blank" title="GooglePlay"><img class="footer__item-app" src="/image/googleplay.svg" alt="Link Google Play"></a>
             </li>
           </ul>
         </div>
@@ -304,8 +309,10 @@
       <button class="popup__cookie-close"></button>
       <form class="popup__cookie-form">
         <p class="popup__cookie-description">This website uses cookies to ensure you get the best experience on our website. They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
-        <button class="popup__cookie-accept">Accept</button>
-        <button class="popup__cookie-decline">Decline</button>
+        <div class="popup__cookie-button-container">
+          <button class="popup__cookie-accept">Accept</button>
+          <button class="popup__cookie-decline">Decline</button>
+        </div>
       </form>
     </div>
     <div class="popup popup_contacts">
@@ -313,39 +320,42 @@
       <form class="popup__contacts-form">
         <div class="popup__contacts-container">
           <label class="popup__contacts-field" for="Name">Name<span class="popup__contacts-asterisk"> *</span></label>
-          <input class="popup__contacts-input" name="Name" id="Name" placeholder="Enter name" />
+          <input class="popup__contacts-input" name="Name" id="Name" placeholder="Enter name" required>
           <span class="popup__contacts-error">This field is required.</span>
         </div>
         <div class="popup__contacts-container">
           <label class="popup__contacts-field" for="Email">Email<span class="popup__contacts-asterisk"> *</span></label>
-          <input class="popup__contacts-input" name="Email" id="Email" placeholder="Enter email" />
+          <input class="popup__contacts-input" name="Email" id="Email" placeholder="Enter email" required>
           <span class="popup__contacts-error">This field is required.</span>
         </div>
         <div class="popup__contacts-container popup__contacts-container_phone">
           <label class="popup__contacts-field" for="Phone">Phone number<span class="popup__contacts-asterisk"> *</span></label>
           <div class="popup__contacts-phone-container">
-            <input class="popup__contacts-phone" name="Phone" id="Phone" placeholder="+1 900 000 00 00" />
+            <input class="popup__contacts-phone" name="Phone" id="Phone" placeholder="+1 900 000 00 00" required>
           </div>
           <span class="popup__contacts-error">This field is required.</span>
         </div>
         <div class="popup__contacts-container">
           <label class="popup__contacts-field" for="Company">Company</label>
-          <input class="popup__contacts-input" name="Company" id="Company" placeholder="Enter company" />
+          <input class="popup__contacts-input" name="Company" id="Company" placeholder="Enter company">
         </div>
         <div class="popup__contacts-container">
           <label class="popup__contacts-field" for="Website">Website/Store URL</label>
-          <input class="popup__contacts-input" name="Website" id="Website" placeholder="Enter Website/Store URL" />
+          <input class="popup__contacts-input" name="Website" id="Website" placeholder="Enter Website/Store URL">
         </div>
         <span class="popup__contacts-error-main">Please fill in all required fields</span>
         <div class="popup__contacts-container">
           <p class="popup__contacts-agreement">By submitting this form you are agreeing to Budss’s <a href="#" target="_blank">Privacy Policy</a> and <a href="#" target="_blank">Terms of Use</a></p>
         </div>
-        <button class="popup__contacts-submit">Contact sales</button>
+        <button class="popup__contacts-submit popup__button-disabled">Contact sales</button>
       </form>
     </div>
     <div class="popup popup_success">
       <button class="popup__success-close"></button>
-      <img src="/image/success-image.svg" class="popup__success-image" />
+      <picture>
+        <source srcset="/image/success-image-large.png" media="(min-width: 1000px)">
+        <img src="/image/success-image.svg" class="popup__success-image" alt="A painted man with a finger up">
+      </picture>
       <h4 class="popup__success-title">Thank you!</h4>
       <p class="popup__success-subtitle">Thank you, we have received your application and will contact you soon!</p>
       <button class="popup__success-button">Super!</button>
@@ -355,13 +365,14 @@
       <button class="popup__burger-button">Contact sales</button>
       <nav class="popup__burger-container">
         <ul class="popup__burger-list">
-          <li class="popup__burger-item"><a class="popup__burger-link" target="_blank">For Business</a></li>
-          <li class="popup__burger-item"><a class="popup__burger-link" target="_blank">For Customers</a></li>
-          <li class="popup__burger-item"><a class="popup__burger-link" target="_blank">Privacy Policy</a></li>
-          <li class="popup__burger-item"><a class="popup__burger-link" target="_blank">Terms Of Use - Seller</a></li>
-          <li class="popup__burger-item"><a class="popup__burger-link" target="_blank">Terms of Use - Sellers & Customers</a></li>
+          <li class="popup__burger-item"><a href="#" class="popup__burger-link" target="_blank">For Business</a></li>
+          <li class="popup__burger-item"><a href="#" class="popup__burger-link" target="_blank">For Customers</a></li>
+          <li class="popup__burger-item"><a href="#" class="popup__burger-link" target="_blank">Privacy Policy</a></li>
+          <li class="popup__burger-item"><a href="#" class="popup__burger-link" target="_blank">Terms Of Use - Seller</a></li>
+          <li class="popup__burger-item"><a href="#" class="popup__burger-link" target="_blank">Terms of Use - Sellers & Customers</a></li>
         </ul>
       </nav>
     </div>
+    <script src="/scripts/scripts.js"></script>
   </body>
 </html>

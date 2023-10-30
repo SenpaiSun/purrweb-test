@@ -1,0 +1,16 @@
+.popup__button-disabled {
+  background-color: #B9B9B9;
+}
+
+.popup__button-disabled:hover {
+  cursor: default;
+  background-color: #B9B9B9;
+}
+
+.popup__button-disabled:focus {
+  border: none;
+}
+
+.popup__button-disabled:active {
+  background-color: #B9B9B9;
+}
