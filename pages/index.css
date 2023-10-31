@@ -140,3 +140,4 @@
 @import url(../blocks/popup/__button-disabled/popup__button-disabled.css);
 @import url(../blocks/root/_scroll-disable/root_scroll-disable.css);
 @import url(../blocks/header/__menu/_fixed/header__menu_fixed.css);
+@import url(../blocks/main/_active-fixed/main_active-fixed.css);

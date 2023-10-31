@@ -8,6 +8,9 @@ const submitButton = document.querySelector('.popup__contacts-submit');
 const submitForm = document.querySelector('.popup__contacts-form')
 const successForm = document.querySelector('.popup_success')
 const buttonBurger = document.querySelector('.popup__burger-button')
+const headerMenu = document.querySelector('.header__menu');
+const mainFixedMenu = document.querySelector('.main');
+const mainError = document.querySelector('.popup__contacts-error-main');
 
 // Function open contacts popup
 function openPopup() {
@@ -80,8 +83,11 @@ requiredInputs.forEach((input) => {
     if (validateForm()) {
       event.preventDefault()
       submitButton.classList.remove('popup__button-disabled');
+      mainError.style.display = 'none'
+
     } else {
       submitButton.classList.add('popup__button-disabled');
+      mainError.style.display = 'block'
     }
   });
 });
@@ -92,14 +98,16 @@ submitForm.addEventListener('submit', (event) => {
   successForm.classList.add('popup_opened')
 })
 
-const headerMenu = document.querySelector('.header__menu');
+// Handler fir fixed header menu
 const scrollOffset = 80;
-
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= scrollOffset) {
     headerMenu.classList.add('header__menu_fixed');
+    mainFixedMenu.classList.add('main_active-fixed');
   } else {
     headerMenu.classList.remove('header__menu_fixed');
+    mainFixedMenu.classList.remove('main_active-fixed');
   }
 });
+
