@@ -1,0 +1,21 @@
+.header__menu_fixed {
+    position: fixed;
+    top: -16px;
+    left: -16px;
+    right: -16px;
+    background-color: #181818;
+    z-index: 3;
+    padding: 8px 5px 4px;
+}
+
+@media screen and (min-width:1000px) {
+  .header__menu_fixed {
+    position: fixed;
+    top: -10px;
+    left: -20px;
+    right: -30px;
+    background-color: #181818;
+    z-index: 3;
+    padding: 10px 10px;
+}
+}

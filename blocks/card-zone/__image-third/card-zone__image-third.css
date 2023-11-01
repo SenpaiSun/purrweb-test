@@ -1,0 +1,11 @@
+.card-zone__image-third {
+
+}
+
+@media screen and (min-width: 1000px) {
+  .card-zone__image-third {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

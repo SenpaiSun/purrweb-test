@@ -1,0 +1,11 @@
+.about__container-content {
+  min-width: 320px;
+}
+
+@media screen and (min-width: 1000px) {
+  .about__container-content {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+  }
+}

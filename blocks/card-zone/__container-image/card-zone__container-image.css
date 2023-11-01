@@ -1,0 +1,12 @@
+.card-zone__container-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 1000px) {
+  .card-zone__container-image {
+    position: relative;
+  }
+}

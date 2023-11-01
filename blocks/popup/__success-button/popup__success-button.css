@@ -1,0 +1,32 @@
+.popup__success-button {
+  margin: 20px 40px 40px;
+  min-width: 255px;
+  min-height: 57px;
+  border-radius: 15px;
+  border: none;
+  color: #FFF;
+  background-color: #954CED;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 600;
+  outline: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .popup__success-button {
+    width: 337px;
+  }
+}
+
+.popup__success-button:hover {
+  cursor: pointer;
+  background: #181818;
+}
+
+.popup__success-button:focus {
+  border: 4px solid#BA8BF3;
+}
+
+.popup__success-button:active {
+  background-color: #7B31D4;
+}

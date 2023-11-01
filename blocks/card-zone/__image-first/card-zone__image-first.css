@@ -1,0 +1,9 @@
+.card-zone__image-first {
+
+}
+
+@media screen and (min-width: 1000px) {
+  .card-zone__image-first {
+    margin-bottom: -4px;
+  }
+}

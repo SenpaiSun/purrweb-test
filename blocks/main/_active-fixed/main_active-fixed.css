@@ -1,0 +1,9 @@
+.main_active-fixed {
+  margin-top: 119px;
+}
+
+@media screen and (min-width: 1000px) {
+  .main_active-fixed {
+    margin-top: 153px;
+  }
+}

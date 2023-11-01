@@ -1,0 +1,12 @@
+.footer__list_active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1350px) {
+  .footer__list_active {
+    display: none;
+  }
+}

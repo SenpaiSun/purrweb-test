@@ -1,0 +1,34 @@
+.popup__contacts-submit {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  min-width: 182px;
+  min-height: 57px;
+  border-radius: 15px;
+  border: none;
+  color: #FFF;
+  background-color: #954CED;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 600;
+  outline: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .popup__contacts-submit {
+    margin-bottom: 40px;
+    width: max-content;
+  }
+}
+
+.popup__contacts-submit:hover {
+  cursor: pointer;
+  background: #181818;
+}
+
+.popup__contacts-submit:focus {
+  border: 4px solid#BA8BF3;
+}
+
+.popup__contacts-submit:active {
+  background-color: #7B31D4;
+}

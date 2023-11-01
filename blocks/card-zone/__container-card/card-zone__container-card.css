@@ -1,0 +1,19 @@
+.card-zone__container-card {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, max-content);
+  margin: 0 16px 0;
+  color: #000;
+  background-color: #F5F5F5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1000px) {
+  .card-zone__container-card {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    border-radius: 30px;
+  }
+}

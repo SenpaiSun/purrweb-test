@@ -1,0 +1,37 @@
+.mobile-app__text {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0 10px;
+  animation: mobile-text 25s linear infinite;
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile-app__text {
+    font-size: 128px;
+  }
+}
+
+@keyframes mobile-text {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translateZ(0)
+  }
+}
+
+.mobile-app__container:nth-child(2) .mobile-app__text {
+  animation: mobile-text-left 25s linear infinite;
+}
+
+@keyframes mobile-text-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

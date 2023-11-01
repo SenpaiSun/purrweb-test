@@ -1,0 +1,12 @@
+.popup__burger-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 17px;
+  top: 19px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  background-image: url(/image/burger-close.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

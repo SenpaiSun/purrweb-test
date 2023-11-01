@@ -1,0 +1,12 @@
+.popup__success-close {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 10px;
+  top: 18px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  background-image: url(/image/close-black.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

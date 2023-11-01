@@ -1,0 +1,11 @@
+.hero {
+  margin: 65px 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+  }
+}

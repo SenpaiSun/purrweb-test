@@ -1,0 +1,9 @@
+.card-zone__container-subtitle {
+
+}
+
+@media screen and (min-width: 1000px) {
+  .card-zone__container-subtitle {
+    text-align: center;
+  }
+}

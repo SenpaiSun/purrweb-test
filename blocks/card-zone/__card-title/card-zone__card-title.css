@@ -1,0 +1,13 @@
+.card-zone__card-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.06;
+}
+
+@media screen and (min-width: 1000px) {
+  .card-zone__card-title {
+    font-size: 48px;
+    line-height: normal;
+    letter-spacing: -0.2px;
+  }
+}

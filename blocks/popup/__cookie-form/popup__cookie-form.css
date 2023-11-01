@@ -1,0 +1,14 @@
+.popup__cookie-form {
+  margin: 30px 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+  .popup__cookie-form {
+    margin: 30px 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+}

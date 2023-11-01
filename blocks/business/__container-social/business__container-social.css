@@ -1,0 +1,16 @@
+.business__container-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px 18px 0 16px;
+}
+
+@media screen and (min-width: 1380px) {
+  .business__container-social {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: -5px;
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,39 @@
+.about__container-item {
+  margin: 0;
+}
+
+.about__container-item:nth-child(1) .about__item-figure {
+  margin-left: -10px;
+}
+
+.about__container-item:nth-child(2) .about__item-figure {
+  margin-left: 2px;
+}
+
+.about__container-item:nth-child(2) .about__item-title {
+  margin-top: 10px;
+}
+
+.about__container-item:nth-child(3) .about__item-title {
+  margin-top: 35px;
+}
+
+.about__container-item:nth-child(4) .about__item-title {
+  margin-top: 34px;
+}
+
+.about__container-item:nth-child(3) .about__container-figure,
+.about__container-item:nth-child(4) .about__container-figure {
+  margin-top: 25px;
+  margin-left: -2px;
+}
+
+.about__container-item:nth-child(4) .about__item-subtitle {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  .about__container-item:nth-child(2) .about__item-figure {
+    margin-top: -10px;
+  }
+}

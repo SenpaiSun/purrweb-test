@@ -1,0 +1,18 @@
+.popup__contacts-close {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 13px;
+  top: 10px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  background-image: url(/image/close-black.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .popup__contacts-close {
+    top: 25px;
+  }
+}

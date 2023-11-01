@@ -1,0 +1,18 @@
+.popup__cookie-description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 1000px) {
+  .popup__cookie-description {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .popup__cookie-description {
+    min-width: 783px;
+    width: max-content;
+  }
+}

@@ -1,0 +1,44 @@
+.business__social-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+  list-style: none;
+  gap: 17px;
+}
+
+.business__social-network .business__social-network-item:nth-child(2n) {
+  margin-top: 65px;
+}
+
+.business__social-network .business__social-network-item:nth-child(1) .business__social-network-image:nth-child(1) {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+  .business__social-network .business__social-network-item:nth-child(1) .business__social-network-image:nth-child(1) {
+    margin-top: 28px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .business__social-network .business__social-network-item:nth-child(2n) .business__social-network-image:nth-child(1) {
+    width: 45px;
+    height: 45px;
+  }
+
+  .business__social-network .business__social-network-item:nth-child(3) .business__social-network-image:nth-child(1) {
+    width: 45px;
+    height: 45px;
+  }
+
+  .business__social-network .business__social-network-item:nth-child(2n) {
+    margin-top: 93px;
+  }
+
+  .business__social-network {
+    gap: 40px;
+    margin-right: 35px;
+    margin-top: 40px;
+  }
+}
