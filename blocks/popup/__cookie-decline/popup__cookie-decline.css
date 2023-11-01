@@ -12,6 +12,14 @@
   outline: none;
 }
 
+
+@media screen and (min-width: 500px) {
+  .popup__cookie-decline {
+    width: 410px;
+    margin: 20px auto 30px;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .popup__cookie-decline {
     margin-bottom: 0;

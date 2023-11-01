@@ -1,9 +1,53 @@
 const template = document.querySelector('.template__image').content
 const templateButton = document.querySelector('.template__button').content
 const containerImage = document.querySelector('.slider__container-images')
+const buttonApply = document.querySelector('.slider__button-apply')
 const containerButton = document.querySelector('.slider__select-image')
+const arrayListStarted = ['/slider-image/image-1.jpg', '/slider-image/image-2.jpg', '/slider-image/image-3.jpg', '/slider-image/image-4.jpg', '/slider-image/image-5.jpg', '/slider-image/image-6.jpg', '/slider-image/image-7.jpg', '/slider-image/image-8.jpg', '/slider-image/image-9.jpg', '/slider-image/image-10.jpg']
+const sliderValue = document.getElementById('slider-value');
+const buttonPlus = document.querySelector('.slider__button_right-plus');
+const buttonMinus = document.querySelector('.slider__button_left-minus');
+const localValue = localStorage.getItem('value')
 
-const arrayList = ['/slider-image/image-1.jpg', '/slider-image/image-2.jpg', '/slider-image/image-3.jpg', '/slider-image/image-4.jpg', '/slider-image/image-5.jpg', '/slider-image/image-6.jpg', '/slider-image/image-7.jpg', '/slider-image/image-8.jpg', '/slider-image/image-9.jpg', '/slider-image/image-10.jpg']
+let offset = 0
+
+let arrayList;
+
+function checkKey() {
+  const keyStorage = localStorage.getItem('value')
+  if(keyStorage !== null) {
+    arrayList = arrayListStarted.slice(0, keyStorage)
+    sliderValue.textContent = keyStorage;
+  } else {
+    arrayList = arrayListStarted
+  }
+}
+
+checkKey()
+
+buttonPlus.addEventListener('click', () => {
+  let value = parseInt(sliderValue.textContent);
+  if (value < 10) {
+    value++;
+    sliderValue.textContent = value;
+    localStorage.setItem('value', sliderValue.textContent)
+  }
+});
+
+buttonMinus.addEventListener('click', () => {
+  let value = parseInt(sliderValue.textContent);
+  if (value > 1) {
+    value--;
+    sliderValue.textContent = value;
+    localStorage.setItem('value', sliderValue.textContent)
+  }
+});
+
+buttonApply.addEventListener('click', () => {
+  location.reload();
+})
+
+
 
 arrayList.forEach((item) => {
   const templateElement = template.querySelector('.slider__container-image').cloneNode(true)
@@ -19,7 +63,6 @@ const buttonRight = document.querySelector('.slider__button_right')
 const buttonLeft = document.querySelector('.slider__button_left')
 const imageWidth = containerImages.offsetWidth
 
-let offset = 0
 let animationInterval
 let imageSelect = 1
 let translateImage = false
@@ -29,7 +72,6 @@ function translateImageRight() {
 }
 function translateImageLeft() {
   containerImages.style.transform = `translateX(${-5540}px)`
-  console.log('qweqweqweq')
 }
 function deleteFantomImage() {
   const imageRemoveAll = document.querySelectorAll('.slider__container-image_fantom-left, .slider__container-image_fantom-right')
@@ -40,7 +82,12 @@ function deleteFantomImage() {
 
 // Animation image for right button
 buttonRight.addEventListener('click', () => {
-  if (imageSelect < arrayList.length) {
+  if(localValue === '1') {
+    return
+  }
+
+
+  if (imageSelect < sliderValue.textContent) {
     imageSelect++
   } else {
     imageSelect = 1
@@ -52,7 +99,6 @@ buttonRight.addEventListener('click', () => {
 
   if(translateImage) {
     translateImageRight()
-    console.log('kekeke')
   }
 
   if (imageSelect === 1) {
@@ -64,7 +110,6 @@ buttonRight.addEventListener('click', () => {
     translateImage = false
   }
 
-  console.log(imageSelect)
   buttonRight.disabled = true
   clearInterval(animationInterval)
 
@@ -74,7 +119,7 @@ buttonRight.addEventListener('click', () => {
   const interval = duration / frames
 
   let currentFrame = 0
-  let imagesCount = arrayList.length + 1
+  let imagesCount = parseInt(sliderValue.textContent) + 1
 
   animationInterval = setInterval(() => {
     if (currentFrame < frames) {
@@ -96,18 +141,20 @@ buttonRight.addEventListener('click', () => {
 
 // Animation image for left button
 buttonLeft.addEventListener('click', () => {
+  const localValue = localStorage.getItem('value')
+  if(localValue === '1') {
+    return
+  }
   if (imageSelect > 1) {
     imageSelect--
   } else {
-    imageSelect = 10
+    imageSelect = sliderValue.textContent
   }
 
   deleteFantomImage()
 
   updateActiveButton(imageSelect - 1)
-
-  if (imageSelect === 10) {
-    translateImage = true
+  if (imageSelect === sliderValue.textContent) {
     translateImage = true
     const containerImages = document.querySelectorAll('.slider__container-image');
     const lastImage = containerImages[containerImages.length - 1].cloneNode(true);
@@ -136,7 +183,7 @@ buttonLeft.addEventListener('click', () => {
       currentFrame++
     } else {
       if (offset >= 1) {
-        offset = -((imageWidth + 4) * arrayList.length)
+        offset = -(step * (localValue - 1))
       }
       containerImages.style.transform = `translateX(${offset}px)`
       clearInterval(animationInterval)

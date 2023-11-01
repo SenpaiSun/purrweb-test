@@ -11,6 +11,13 @@
   outline: none;
 }
 
+@media screen and (min-width: 500px) {
+  .popup__cookie-accept {
+    width: 410px;
+    margin: 20px auto 0;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .popup__cookie-accept {
     width: 124px;
